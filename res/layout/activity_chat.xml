@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 顶部 -->
+
+    <LinearLayout
+        android:id="@+id/chat_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_activity_height"
+        android:background="@drawable/title_bar"
+        android:gravity="center"
+        android:onClick="doClick" >
+
+        <TextView
+            android:id="@+id/chat_topbar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:text="@string/chat_title"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/title_textSize" />
+    </LinearLayout>
+
+    <mixinan.view.ChatListView
+        android:id="@+id/chat_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/activity_bg_gray"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:listSelector="@android:color/transparent"
+        android:transcriptMode="normal" >
+    </mixinan.view.ChatListView>
+
+    <!-- 发送框 -->
+
+    <RelativeLayout
+        android:id="@+id/input_view"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bottom_bar"
+         >
+
+        <Button
+            android:id="@+id/chat_bt"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bt_selector"
+            android:onClick="doClick"
+            android:text="@string/send_message" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/chat_bt" >
+
+            <EditText
+                android:id="@+id/chat_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/login_edit_normal"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/chat_delete"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="3dp"
+                android:contentDescription="@null"
+                android:onClick="doClick"
+                android:src="@drawable/x"
+                android:visibility="gone" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/bottom_nav_layout" />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">wyJinBu</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="letterA">A</string>
+    <string name="wordName">name</string>
+    <string name="chatRobot">聊天机器人</string>
+    <string name="blog">代码</string>
+    <string name="stop1">哥们，别滑了，已经到顶了</string>
+    <string name="todayTime">今天是2016年1月16日</string>
+    <string name="daysCount">距离过年还有25天</string>
+    <string name="about">关于</string>
+    <string name="letter_i">i</string>
+    <string name="title_activity_first">FirstActivity</string>
+    <string name="myblog">My Blog</string>
+    <string name="chat_title">客厅</string>
+    <string name="hideInfo">To Be Better</string>
+    <string name="dialog_blog">这是我参考过的一些文章。如果你有好链接，欢迎和我分享。点击按钮，会弹出浏览器启动QQ，请莫惊慌。</string>
+    <string name="dialog_chat">自动聊天功能，用的是图灵机器人免费接口。感谢图灵网。点击按钮，去它们官网了解更多。</string>
+    <string name="dialog_girl">这些美女图片，来自“干货集中营”网站提供的免费接口。感谢“代码家”和他的编辑朋友们。美丽万岁。</string>
+    <string name="girl">姑娘</string>
+    <string name="loading">拉我一把，给你好看</string>
+    <string name="send_message">发送</string>
+    <string name="welcome">to be better</string>
+    <string name="baidu">搜索</string>
+    <string name="home">Home</string>
+    <string name="http">网址</string>
+    <string name="chatwithme">长按“客厅”和我聊天</string>
+    <string name="thereismyblog">右边有我博客</string>
+    <string name="thanks">感谢下载和使用</string>
+    <string name="me">-wyJinBu-</string>
+    <string name="empty">没联网吧？ 看个鸟儿</string>
+    <string name="empty_web">没联网吧？ 看个猴儿</string>
+
+</resources>

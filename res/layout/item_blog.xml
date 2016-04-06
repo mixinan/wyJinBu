@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+     
+     <TextView 
+        android:id="@+id/item_tv_blog_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/section_textSize"
+        android:text="@string/letterA"
+        android:background="@color/activity_bg_gray"
+        />
+    
+     
+    <TextView 
+        android:id="@+id/item_tv_blog_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:padding="12dp"
+        android:textSize="@dimen/item_blog_textSize"
+        android:textColor="@drawable/item_word_selector"
+        android:background="@drawable/item_selector"
+        android:text="@string/wordName"
+        />
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/section_green"
+        />
+    
+</LinearLayout>

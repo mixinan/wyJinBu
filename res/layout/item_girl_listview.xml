@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"  >
+
+    <RelativeLayout
+        android:id="@+id/view"
+        android:layout_width="158dp"
+        android:layout_height="108dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentLeft="true"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="148dp"
+            android:layout_height="98dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:contentDescription="@null"
+            android:src="@drawable/monkey_not_see" >
+        </ImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_alignBottom="@+id/view"
+        android:layout_toRightOf="@+id/view"
+        android:weightSum="2"
+        android:orientation="vertical" >
+        
+        <TextView 
+            android:id="@+id/girl_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/title_textSize"
+            />
+        
+        <TextView 
+            android:id="@+id/girl_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/todayTime"
+            android:textColor="@color/black"
+            />
+        
+        
+    </LinearLayout>
+    
+	<View 
+	    android:layout_below="@id/ll"
+	    android:layout_width="match_parent"
+	    android:layout_height="2dp"
+	    android:layout_marginTop="2dp"
+	    android:background="@color/section_green"
+	    />
+</RelativeLayout>

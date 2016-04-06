@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_height"
+    android:background="@drawable/bottom_bar"
+    android:gravity="center_vertical"
+    android:id="@+id/bottom_bar"
+    >
+    
+         <Button 
+	        android:id="@+id/btGirl"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent"
+	        android:onClick="doClick"
+	        android:background="@drawable/nav_news_button_selector"
+	        />
+	    
+         <Button 
+	        android:id="@+id/btChat"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/nav_chat_button_selector"
+	        android:onClick="doClick"
+	        />
+        
+         <Button 
+	        android:id="@+id/btBlog"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/nav_blog_button_selector"
+	        android:onClick="doClick"
+	        />
+	    
+    
+</LinearLayout>

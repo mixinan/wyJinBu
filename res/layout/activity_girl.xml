@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_gray"
+    android:orientation="vertical" >
+
+    <!-- 顶部 -->
+
+    <LinearLayout
+        android:id="@+id/girl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_activity_height"
+        android:background="@drawable/title_bar"
+        android:gravity="center"
+        android:onClick="doClick" >
+
+        <TextView
+            android:id="@+id/girl_topbar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:text="@string/girl"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/title_textSize" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <mixinan.view.ReflashListView
+            android:id="@+id/girl_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent" >
+        </mixinan.view.ReflashListView>
+
+        <RelativeLayout
+            android:id="@+id/empty_girl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+             >
+             
+            <TextView
+                android:id="@+id/girl_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="38dp"
+                android:text="@string/empty"
+                android:textSize="@dimen/title_textSize" />
+            
+            <Button
+                android:id="@+id/girl_reLoad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:background="@drawable/reload"
+                android:layout_centerHorizontal="true"
+                android:text="重新加载"
+                android:textColor="@color/title_color"
+                android:layout_below="@id/girl_tv"
+                android:textSize="@dimen/title_textSize" />
+            
+            <ImageView
+                android:layout_below="@id/girl_reLoad"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:contentDescription="@null"
+                android:layout_alignParentBottom="true"
+                android:scaleType="fitXY"
+                android:layout_margin="8dp"
+                android:src="@drawable/bird" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <include layout="@layout/bottom_nav_layout" />
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+	<TextView 
+	    android:id="@+id/myblog"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+	    android:text="@string/myblog"
+	    android:textSize="@dimen/item_blog_textSize"
+	    android:padding="18dp"
+	    android:onClick="doClick"
+	    android:textColor="@drawable/item_word_selector"
+	    android:gravity="center"
+	    android:background="@drawable/item_selector"
+	    />
+    
+    
+</LinearLayout>
